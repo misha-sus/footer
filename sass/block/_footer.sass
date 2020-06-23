@@ -1,0 +1,176 @@
+.footer
+    padding: 64px 0 0px 0 
+    width: 100%
+    &__header
+        display: flex
+        justify-content: space-between
+    &__column
+        max-width: 221px
+        &-title
+            font-size: 16px
+            color: #333333
+        &-list
+            margin: 40px 0 20px 0
+            ul
+                list-style-type: none
+                line-height: 32px
+                li
+        a   
+            font-style: normal
+            font-size: 16px
+            font-weight: bold
+            line-height: 16px
+            text-decoration: none
+            color: #FF6500
+
+
+
+
+
+    // серeдина футера
+    &__wrapper
+        margin-top: 81px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        width: 100%
+        
+    &__info
+        width: 400px
+        &-tel
+            a
+                text-decoration: none
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 26px
+                color: #333333
+                &:hover
+                    cursor: pointer
+                    text-decoration: underline
+        &-location
+            margin-top: 17px
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #333333
+    &__network
+        display: flex
+        justify-content: space-between
+        width: 280px
+        &_item
+            color: #fff
+            text-decoration: none
+            i
+                background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%)
+                border-radius: 10px
+                width: 52px
+                height: 52px
+                display: flex
+                justify-content: center
+                align-items: center
+    &__mobile
+        width: 315px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        a
+            height: 50px
+            width: 156px
+            img
+                width: 100%
+                height: 100%
+
+    // конец
+    &__footer
+        margin-top: 20px
+        height: 48px
+        width: 100%
+        background-color: #F4F4F4
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-left,&-right
+            display: flex
+            p
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 16px
+            img
+                width: 14px
+                height: 14px
+                margin-right: 23px
+        &-left
+            padding-left: 70px
+        &-right
+            padding-right: 70px
+
+        
+@media screen and ( max-width: 1920px )
+    .footer
+        &__column
+            &-title
+                img
+                    display: none
+@media screen and ( max-width: 1366px )
+    .footer
+        &__column
+            &-title
+                img
+                    display: none
+        &__info
+            width: 255px
+@media screen and ( max-width: 769px )
+    .footer
+        &__column
+            a
+                display: none
+            img  
+                display: none  
+            &-title
+                img
+                    display: inline-block
+
+            &-list
+                display: none
+                a
+                    display: none
+        &__info
+            width: 400px
+            text-align: right
+        &__network
+            margin-top: 20px
+        &__mobile
+            margin-top: 20px
+@media screen and ( max-width: 576px )
+    .footer
+        &__header
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__column
+            margin-top: 10px
+        
+        &__wrapper
+            justify-content: center
+        &__info
+            width: 500px
+            text-align: center
+            margin-top: 20px
+        &__network
+            width: 271px
+        &__mobile
+            a
+               width:  135px
+        &__footer
+            padding: 0
+            &-left
+                display: none
+            &-right
+                padding: 0
+                margin: 0 auto
+
+
